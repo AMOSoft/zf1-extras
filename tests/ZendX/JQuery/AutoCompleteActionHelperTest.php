@@ -1,13 +1,13 @@
 <?php
 
-require_once dirname(__FILE__)."/../../TestHelper.php";
+//require_once dirname(__FILE__)."/../../TestHelper.php";
 
-require_once "Zend/Controller/Front.php";
-require_once "Zend/Controller/Request/Simple.php";
-require_once "Zend/Controller/Response/Cli.php";
-require_once "ZendX/JQuery/Controller/Action/Helper/AutoComplete.php";
+//require_once "Zend/Controller/Front.php";
+//require_once "Zend/Controller/Request/Simple.php";
+//require_once "Zend/Controller/Response/Cli.php";
+//require_once "ZendX/JQuery/Controller/Action/Helper/AutoComplete.php";
 
-class ZendX_JQuery_AutoCompleteActionHelperTest extends PHPUnit_Framework_TestCase
+class ZendX_JQuery_AutoCompleteActionHelperTest extends PHPUnit\Framework\TestCase
 {
     protected $_front = null;
 

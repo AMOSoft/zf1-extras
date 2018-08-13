@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see Zend_View_Helper_HtmlElement
- */
-include_once "Zend/View/Helper/HtmlElement.php";
 
 /**
  * jQuery Accordion Pane, goes with Accordion Container
@@ -190,7 +186,7 @@ class ZendX_JQuery_View_Helper_AjaxLink extends Zend_View_Helper_HtmlElement
             $options['dataType'] = "html";
         }
 
-        $requestHandler = $this->_determineRequestHandler($options, (count($params)>0)?true:false);
+        $requestHandler = $this->_determineRequestHandler($options, (!is_null($params) && count($params)>0)?true:false);
 
         $callbackCompleteJs = array();
         if($updateContainer != false) {

@@ -42,18 +42,8 @@ require_once 'ZendX/Console/Process/Unix.php';
  * @copyright  Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class ZendX_Console_Process_UnixTest extends PHPUnit_Framework_TestCase
+class ZendX_Console_Process_UnixTest extends PHPUnit\Framework\TestCase
 {
-    /**
-     * Runs the test methods of this class.
-     *
-     * @return void
-     */
-    public static function main()
-    {
-        $suite  = new PHPUnit_Framework_TestSuite("ZendX_Console_Process_UnixTest");
-        $result = PHPUnit_TextUI_TestRunner::run($suite);
-    }
     
     public function setUp()
     {
@@ -202,9 +192,4 @@ class aliveProcess extends ZendX_Console_Process_Unix
     {
         $this->_setAlive();
     }
-}
-
-// Call ZendX_Console_Process_UnixTest::main() if this source file is executed directly.
-if (PHPUnit_MAIN_METHOD == "ZendX_Console_Process_UnixTest::main") {
-    ZendX_Console_Process_UnixTest::main();
 }

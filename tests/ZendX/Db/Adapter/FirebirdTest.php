@@ -22,16 +22,11 @@
 /**
  * @see Zend_Db_Adapter_TestCommon
  */
-require_once 'Zend/Db/Adapter/TestCommon.php';
+require_once '../vendor/diablomedia/zendframework1-db/tests/Zend/Db/Adapter/TestCommon.php';
 
-/**
- * @see Zend_Db_Adapter_Firebird
- */
-require_once 'ZendX/Db/Adapter/Firebird.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__);
 
 class ZendX_Db_Adapter_FirebirdTest extends Zend_Db_Adapter_TestCommon
+
 {
 
     protected $_numericDataTypes = array(

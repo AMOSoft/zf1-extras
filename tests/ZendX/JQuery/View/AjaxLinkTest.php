@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-require_once "jQueryTestCase.php";
-
-require_once "ZendX/JQuery/View/Helper/AjaxLink.php";
-
 class ZendX_JQuery_View_AjaxLinkTest extends ZendX_JQuery_View_jQueryTestCase
 {
 

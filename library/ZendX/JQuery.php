@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see Zend_Json
- */
-require_once "Zend/Json.php";
 
 /**
  * jQuery Global Class holding constants and static convienience methods.

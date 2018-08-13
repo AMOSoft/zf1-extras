@@ -20,14 +20,14 @@
  * @version     $Id: DatePickerTest.php 20165 2010-01-09 18:57:56Z bkarwin $
  */
 
-require_once dirname(__FILE__)."/../../../TestHelper.php";
+//require_once dirname(__FILE__)."/../../../TestHelper.php";
 
-require_once "Zend/Registry.php";
-require_once "Zend/View.php";
-require_once "ZendX/JQuery.php";
-require_once "ZendX/JQuery/View/Helper/JQuery.php";
+//require_once "Zend/Registry.php";
+//require_once "Zend/View.php";
+//require_once "ZendX/JQuery.php";
+//require_once "ZendX/JQuery/View/Helper/JQuery.php";
 
-abstract class ZendX_JQuery_View_jQueryTestCase extends PHPUnit_Framework_TestCase
+abstract class ZendX_JQuery_View_jQueryTestCase extends PHPUnit\Framework\TestCase
 {
     /**
      * @var Zend_View

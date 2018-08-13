@@ -20,7 +20,6 @@
  * @version     $Id$
  */
 
-require_once "Zend/Exception.php";
 
 /**
  * jQuery Exception

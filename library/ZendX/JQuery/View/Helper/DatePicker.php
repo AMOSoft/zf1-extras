@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see Zend_Registry
- */
-require_once "Zend/Registry.php";
 
 /**
  * @see ZendX_JQuery_View_Helper_UiWidget
@@ -95,7 +91,6 @@ class ZendX_JQuery_View_Helper_DatePicker extends ZendX_JQuery_View_Helper_UiWid
             /**
              * @see Zend_Locale_Format
              */
-            require_once "Zend/Locale/Format.php";
             $format = Zend_Locale_Format::getDateFormat($locale);
         }
 

@@ -159,10 +159,11 @@ class ZendX_JQuery_View_AccordionContainerTest extends ZendX_JQuery_View_jQueryT
         );
     }
 
+    /**
+     *  @expectedException ZendX_JQuery_View_Exception
+     */
     public function testAccordionSetWrongHtmlTemplate_ThrowsException()
     {
-        $this->setExpectedException("ZendX_JQuery_View_Exception");
-
         $this->view->getHelper('accordionContainer')->setElementHtmlTemplate("foo");
     }
 

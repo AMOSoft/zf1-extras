@@ -1,0 +1,28 @@
+<phpunit
+    bootstrap="./TestHelper.php"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="false"
+    beStrictAboutTestsThatDoNotTestAnything="false"
+    backupGlobals="true"
+    stderr="true">
+    <testsuites>
+        <testsuite name="ZendX_Application_AllTests">
+          <directory>ZendX/Application</directory>
+        </testsuite>
+        
+        <testsuite name="ZendX_Console_AllTests">
+          <directory>ZendX/Console</directory>
+        </testsuite>
+        
+        <testsuite name="ZendX_JQuery_AllTests">
+          <directory>ZendX/JQuery</directory>
+        </testsuite>
+        
+        <testsuite name="ZendX_Db_AllTests">
+          <directory>ZendX/Db</directory>
+        </testsuite>
+    </testsuites>
+    
+
+</phpunit>

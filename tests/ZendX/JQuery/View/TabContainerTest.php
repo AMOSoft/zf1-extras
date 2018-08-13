@@ -20,8 +20,6 @@
  * @version     $Id$
  */
 
-require_once "jQueryTestCase.php";
-require_once "ZendX/JQuery/View/Helper/TabContainer.php";
 
 class ZendX_JQuery_View_TabContainerTest extends ZendX_JQuery_View_jQueryTestCase
 {
@@ -106,6 +104,7 @@ class ZendX_JQuery_View_TabContainerTest extends ZendX_JQuery_View_jQueryTestCas
         $this->assertNotContains('This is captured, but not displayed: contentUrl overrides this output.', $tabs);
     }
 
+    
     public function testPaneCaptureLockExceptionNoNestingAllowed()
     {
         $this->view->tabPane()->captureStart('pane1', 'Label1');

@@ -20,7 +20,7 @@ http://framework.zend.com/manual/en/migration.html
 SYSTEM REQUIREMENTS
 ===================
 
-Zend Framework Extras requires PHP 5.2.11 or later. Please see our reference
+Zend Framework Extras requires PHP 7.0 or later. Please see our reference
 guide for more detailed system requirements:
 
 http://framework.zend.com/manual/en/requirements.html

@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see ZendX_JQuery_Form_Decorator_UiWidgetContainer
- */
-require_once "UiWidgetPane.php";
 
 /**
  * Form Decorator for jQuery Tab Pane View Helper

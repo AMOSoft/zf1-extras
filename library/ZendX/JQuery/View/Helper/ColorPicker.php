@@ -21,11 +21,6 @@
  */
 
 /**
- * @see ZendX_JQuery_View_Helper_UiWidget
- */
-require_once "ZendX/JQuery/View/Helper/UiWidget.php";
-
-/**
  * jQuery Color Picker View Helper
  *
  * @uses 	   Zend_View_Helper_FormText

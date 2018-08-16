@@ -20,9 +20,6 @@
  * @version     $Id$
  */
 
-require_once "jQueryTestCase.php";
-
-require_once "ZendX/JQuery/View/Helper/Slider.php";
 
 class ZendX_JQuery_View_SliderTest extends ZendX_JQuery_View_jQueryTestCase
 {

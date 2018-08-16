@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see ZendX_JQuery
- */
-require_once 'ZendX/JQuery.php';
 
 /**
  * jQuery View Helper. Transports all jQuery stack and render information across all views.

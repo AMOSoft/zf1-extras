@@ -19,11 +19,6 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/**
- * @see Zend_Db_Adapter_TestCommon
- */
-require_once '../vendor/diablomedia/zendframework1-db/tests/Zend/Db/Adapter/TestCommon.php';
-
 
 class ZendX_Db_Adapter_FirebirdTest extends Zend_Db_Adapter_TestCommon
 

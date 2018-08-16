@@ -20,27 +20,11 @@
  * @version     $Id$
  */
 
-require_once dirname(__FILE__)."/../../../TestHelper.php";
 
 if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'ZendX_JQuery_View_AllTests::main');
 }
 
-require_once "Zend/Registry.php";
-require_once "Zend/View.php";
-require_once "ZendX/JQuery.php";
-require_once "ZendX/JQuery/View/Helper/JQuery.php";
-
-require_once "AccordionContainerTest.php";
-require_once "AjaxLinkTest.php";
-require_once "AutoCompleteTest.php";
-require_once "ColorPickerTest.php";
-require_once "DatePickerTest.php";
-require_once "DialogContainerTest.php";
-require_once "jQueryTest.php";
-require_once "SliderTest.php";
-require_once "SpinnerTest.php";
-require_once "TabContainerTest.php";
 
 class ZendX_JQuery_View_AllTests
 {

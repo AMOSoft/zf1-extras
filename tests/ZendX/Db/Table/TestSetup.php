@@ -21,16 +21,6 @@
  * @version    $Id: TestSetup.php 4791 2007-05-12 23:54:20Z bkarwin $
  */
 
-
-/**
- * @see ZendX_Db_TestSetup
- */
-require_once 'ZendX/Db/TestSetup.php';
-
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__);
-
-
 /**
  * @category   ZendX
  * @package    ZendX_Db

@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see ZendX_JQuery_View_Helper_UiWidget
- */
-require_once "ZendX/JQuery/View/Helper/UiWidget.php";
 
 /**
  * jQuery Spinner View Helper

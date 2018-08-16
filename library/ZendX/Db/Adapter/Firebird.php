@@ -21,27 +21,6 @@
  */
 
 /**
- * @see Zend_Db_Adapter_Abstract
- */
-require_once 'Zend/Db/Adapter/Abstract.php';
-
-/**
- * @see Zend_Db_Profiler
- */
-require_once 'Zend/Db/Profiler.php';
-
-/**
- * @see Zend_Db_Select
- */
-require_once 'Zend/Db/Select.php';
-
-/**
- * @see Zend_Db_Statement_Firebird
- */
-require_once 'ZendX/Db/Statement/Firebird.php';
-
-
-/**
  * @category   ZendX
  * @package    ZendX_Db
  * @subpackage Adapter
@@ -285,7 +264,6 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
             /**
              * @see ZendX_Db_Adapter_Firebird_Exception
              */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception('The Interbase extension is required for this adapter but the extension is not loaded');
         }
 
@@ -306,7 +284,6 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
             /**
              * @see ZendX_Db_Adapter_Firebird_Exception
              */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception(ibase_errmsg());
         }
     }
@@ -404,10 +381,6 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
     protected function _commit()
     {
         if (false === ibase_commit(is_resource($this->_transResource) ? $this->_transResource : $this->_connection)) {
-            /**
-             * @see ZendX_Db_Adapter_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception(ibase_errmsg());
         }
         $this->_transResource = null;
@@ -422,10 +395,6 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
     protected function _rollBack()
     {
         if (false === ibase_rollback(is_resource($this->_transResource) ? $this->_transResource : $this->_connection)) {
-            /**
-             * @see ZendX_Db_Adapter_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception(ibase_errmsg());
         }
         $this->_transResource = null;
@@ -451,10 +420,6 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
                 $this->_fetchMode = $mode;
                 break;
             default:
-                /**
-                 * @see ZendX_Db_Adapter_Firebird_Exception
-                 */
-                require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
                 throw new ZendX_Db_Adapter_Firebird_Exception("Invalid fetch mode '$mode' specified");
         }
     }
@@ -472,19 +437,11 @@ class ZendX_Db_Adapter_Firebird extends Zend_Db_Adapter_Abstract
     {
         $count = intval($count);
         if ($count <= 0) {
-            /**
-             * @see ZendX_Db_Adapter_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception("LIMIT argument count=$count is not valid");
         }
 
         $offset = intval($offset);
         if ($offset < 0) {
-            /**
-             * @see ZendX_Db_Adapter_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Adapter/Firebird/Exception.php';
             throw new ZendX_Db_Adapter_Firebird_Exception("LIMIT argument offset=$offset is not valid");
         }
 

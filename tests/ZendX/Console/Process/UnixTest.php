@@ -26,16 +26,6 @@ if (!defined("PHPUnit_MAIN_METHOD")) {
 }
 
 /**
- * Test helper
- */
-require_once dirname(__FILE__) . '/../../../TestHelper.php';
-
-/**
- * ZendX_Console_Process_Unix
- */
-require_once 'ZendX/Console/Process/Unix.php';
-
-/**
  * @category   Zend
  * @package    ZendX_Console
  * @subpackage UnitTests

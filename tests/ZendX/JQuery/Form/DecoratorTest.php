@@ -20,21 +20,9 @@
  * @version     $Id: AllTests.php 11232 2008-09-05 08:16:33Z beberlei $
  */
 
-//require_once dirname(__FILE__)."/../../../TestHelper.php";
-//
 if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'ZendX_JQuery_View_DecoratorTest::main');
 }
-
-//require_once "ZendX/JQuery.php";
-//require_once "ZendX/JQuery/View/Helper/JQuery.php";
-//
-//require_once "ZendX/JQuery/Form.php";
-//require_once "ZendX/JQuery/Form/Element/Spinner.php";
-//require_once "Zend/Form/Decorator/ViewHelper.php";
-//require_once "ZendX/JQuery/Form/Decorator/UiWidgetElement.php";
-//require_once "ZendX/JQuery/Form/Decorator/TabContainer.php";
-//require_once "ZendX/JQuery/Form/Decorator/TabPane.php";
 
 class ZendX_JQuery_Form_DecoratorTest extends PHPUnit\Framework\TestCase
 {

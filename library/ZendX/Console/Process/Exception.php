@@ -20,11 +20,6 @@
  */
 
 /**
- * @see ZendX_Console_Exception
- */
-require_once 'ZendX/Console/Exception.php';
-
-/**
  * Exception class for ZendX_Console_Process
  *
  * @category  ZendX

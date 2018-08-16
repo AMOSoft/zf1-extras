@@ -20,30 +20,9 @@
  * @version     $Id: AllTests.php 11232 2008-09-05 08:16:33Z beberlei $
  */
 
-//require_once dirname(__FILE__)."/../../../TestHelper.php";
-//
 if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'ZendX_JQuery_Form_ElementTest::main');
 }
-
-//require_once "Zend/Registry.php";
-//require_once "Zend/View.php";
-//require_once "Zend/Form/Element.php";
-//require_once "Zend/Form/SubForm.php";
-//require_once "Zend/Form/Decorator/Description.php";
-//require_once "Zend/Json.php";
-//require_once "ZendX/JQuery.php";
-//require_once "ZendX/JQuery/Form.php";
-//require_once "ZendX/JQuery/View/Helper/JQuery.php";
-//
-//require_once "ZendX/JQuery/Form/Element/Spinner.php";
-//require_once "ZendX/JQuery/Form/Element/Slider.php";
-//require_once "ZendX/JQuery/Form/Element/ColorPicker.php";
-//require_once "ZendX/JQuery/Form/Element/DatePicker.php";
-//require_once "ZendX/JQuery/Form/Element/AutoComplete.php";
-//
-//require_once "Zend/Form/Decorator/ViewHelper.php";
-//require_once "ZendX/JQuery/Form/Decorator/UiWidgetElement.php";
 
 
 class ZendX_JQuery_Form_ElementTest extends PHPUnit\Framework\TestCase

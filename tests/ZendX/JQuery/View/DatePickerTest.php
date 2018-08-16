@@ -20,11 +20,6 @@
  * @version     $Id$
  */
 
-//require_once "jQueryTestCase.php";
-//
-//require_once "Zend/Locale.php";
-//require_once "ZendX/JQuery/View/Helper/DatePicker.php";
-
 class ZendX_JQuery_View_DatePickerTest extends ZendX_JQuery_View_jQueryTestCase
 {
     public function testCallingInViewEnablesJQueryHelper()

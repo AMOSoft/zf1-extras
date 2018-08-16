@@ -33,7 +33,6 @@ if (!is_executable($PHPUNIT)) {
     echo "PHPUnit is not executable ($PHPUNIT)";
     exit;
 }
-require_once __DIR__ . '/../vendor/autoload.php';
 $phpUnitXml = __DIR__ . '/phpunit.xml';
 $handle = fopen($phpUnitXml, 'r');
 $missingFiles = [];

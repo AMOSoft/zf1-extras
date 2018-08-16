@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see ZendX_JQuery_View_Helper_UiWidgetPane
- */
-require_once "UiWidgetPane.php";
 
 /**
  * jQuery Accordion Pane, goes with Accordion Container

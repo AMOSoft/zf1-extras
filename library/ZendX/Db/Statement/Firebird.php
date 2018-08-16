@@ -21,11 +21,6 @@
  */
 
 /**
- * @see Zend_Db_Statement
- */
-require_once 'Zend/Db/Statement.php';
-
-/**
  * Extends for Firebird
  *
  * @category   ZendX
@@ -102,10 +97,6 @@ class ZendX_Db_Statement_Firebird extends Zend_Db_Statement
             $this->_stmtPrepared = @ibase_prepare($connection, $sql);
 
         if ($this->_stmtPrepared === false) {
-            /**
-             * @see ZendX_Db_Statement_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Statement/Firebird/Exception.php';
             throw new ZendX_Db_Statement_Firebird_Exception("Firebird prepare error: " . ibase_errmsg());
         }
     }
@@ -242,10 +233,6 @@ class ZendX_Db_Statement_Firebird extends Zend_Db_Statement
             ibase_commit_ret();
             
         if ($retval === false) {
-            /**
-             * @see ZendX_Db_Statement_Firebird_Exception
-             */
-            require_once 'ZendX/Db/Statement/Firebird/Exception.php';
             throw new ZendX_Db_Statement_Firebird_Exception("Firebird statement execute error : " . $last_error);
         }               
 
@@ -322,10 +309,6 @@ class ZendX_Db_Statement_Firebird extends Zend_Db_Statement
                 }
                 break;
             default:
-                /**
-                 * @see ZendX_Db_Adapter_Firebird_Exception
-                 */
-                require_once 'ZendX/Db/Statement/Firebird/Exception.php';
                 throw new ZendX_Db_Statement_Firebird_Exception(
                     "Invalid fetch mode '$style' specified"
                 );
@@ -346,10 +329,6 @@ class ZendX_Db_Statement_Firebird extends Zend_Db_Statement
      */
     public function nextRowset()
     {
-        /**
-         * @see ZendX_Db_Statement_Firebird_Exception
-         */
-        require_once 'ZendX/Db/Statement/Firebird/Exception.php';
         throw new ZendX_Db_Statement_Firebird_Exception(__FUNCTION__.'() is not implemented');
     }
 

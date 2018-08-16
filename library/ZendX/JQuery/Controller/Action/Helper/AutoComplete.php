@@ -20,7 +20,6 @@
  * @version     $Id$
  */
 
-require_once "Zend/Controller/Action/Helper/AutoComplete/Abstract.php";
 
 class ZendX_JQuery_Controller_Action_Helper_AutoComplete
 extends Zend_Controller_Action_Helper_AutoComplete_Abstract
@@ -51,10 +50,6 @@ extends Zend_Controller_Action_Helper_AutoComplete_Abstract
     public function prepareAutoCompletion($data, $keepLayouts = false)
     {
         if (!$this->validateData($data)) {
-            /**
-             * @see Zend_Controller_Action_Exception
-             */
-            require_once 'Zend/Controller/Action/Exception.php';
             throw new Zend_Controller_Action_Exception('Invalid data passed for autocompletion');
         }
 

@@ -23,10 +23,6 @@ if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'AllTests::main');
 }
 
-/**
- * @see ZendX_AllTests
- */
-require_once 'ZendX/AllTests.php';
 
 class AllTests
 {

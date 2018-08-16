@@ -20,10 +20,6 @@
  * @version     $Id$
  */
 
-/**
- * @see ZendX_JQuery_View_Helper_UiWidget
- */
-require_once "ZendX/JQuery/View/Helper/UiWidget.php";
 
 /**
  * jQuery Autocomplete View Helper
@@ -66,7 +62,6 @@ class ZendX_JQuery_View_Helper_AutoComplete extends ZendX_JQuery_View_Helper_UiW
                 $params['source'] = $params['data'];
                 unset($params['data']);
             } else {
-                require_once "ZendX/JQuery/Exception.php";
                 throw new ZendX_JQuery_Exception(
                     "Cannot construct AutoComplete field without specifying 'source' field, ".
                     "either an url or an array of elements."

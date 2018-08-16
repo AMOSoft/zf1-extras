@@ -19,10 +19,6 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-require_once 'Zend/Db/Table/Select/TestCommon.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__);
-
 class ZendX_Db_Table_Select_FirebirdTest extends Zend_Db_Table_Select_TestCommon
 {
 

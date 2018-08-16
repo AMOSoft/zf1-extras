@@ -1,30 +1,34 @@
 {
-    "name": "zendframework/zf1-extras",
-    "description": "Zend Framework 1 Extras",
+    "name": "amosoft/zf1-extras",
+    "description": "Zend Framework 1 Extras upgraded to php 7.2",
     "type": "library",
     "keywords": [
         "framework",
-        "zf1"
+        "zf1",
+	"zf1-extras"
     ],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.2.11",
-        "diablomedia/zendframework1": "4.0.*"
+        "php": ">=7.0.0",
+        "diablomedia/zendframework1": "4.0.*@dev"
     },
     "autoload": {
         "psr-0": {
-            "ZendX_": "library/",
-            "Zend_": "vendor/diablomedia/zendframework1",
-            "Zend_Db_": "vendor/diablomedia/zendframework1-db"
+            "ZendX_": "library/"
         }
     },
-    "include-path": [
-        "library/"
-    ],
+    "autoload-dev": {
+        "psr-0": {
+            "ZendX_": "tests/"
+        },
+        "classmap": [
+            "vendor/diablomedia/zendframework1-db/tests/"
+        ]
+    },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.12.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }

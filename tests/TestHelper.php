@@ -20,19 +20,6 @@
  * @version    $Id$
  */
 
-/**
- * Include PHPUnit dependencies
- */
-if (version_compare(PHPUnit\Runner\Version::id(), '4.0.0', '<')) {
-    require_once 'PHPUnit/Runner/Version.php';
-    $phpunitVersion = PHPUnit\Runner\Version::id();
-    if ($phpunitVersion == '@package_version@' || version_compare($phpunitVersion, '3.5.5', '>=')) {
-        require_once 'PHPUnit/Autoload.php'; // >= PHPUnit 3.5.5
-    } else {
-        require_once 'PHPUnit/Framework.php'; // < PHPUnit 3.5.5
-    }
-}
-
 /*
  * Set error reporting to the level to which Zend Framework code must comply.
  */
@@ -59,15 +46,6 @@ $path = array(
     );
 set_include_path(implode(PATH_SEPARATOR, $path));
 
-/*
- * Load the user-defined test configuration file, if it exists; otherwise, load
- * the default configuration.
- */
-if (is_readable($zfCoreTests . DIRECTORY_SEPARATOR . 'TestConfiguration.php')) {
-    require_once $zfCoreTests . DIRECTORY_SEPARATOR . 'TestConfiguration.php';
-} else {
-    require_once $zfCoreTests . DIRECTORY_SEPARATOR . 'TestConfiguration.php.dist';
-}
 
 /**
  * Start output buffering, if enabled

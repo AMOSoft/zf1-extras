@@ -18,11 +18,6 @@
  * @copyright  Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-
-require_once 'Zend/Db/Select/TestCommon.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__);
-
 class ZendX_Db_Select_FirebirdTest extends Zend_Db_Select_TestCommon
 {
 

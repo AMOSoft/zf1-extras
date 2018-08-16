@@ -20,19 +20,9 @@
  * @version     $Id$
  */
 
-//require_once dirname(__FILE__)."/../../TestHelper.php";
-//
 if (!defined('PHPUnit_MAIN_METHOD')) {
     define('PHPUnit_MAIN_METHOD', 'ZendX_JQuery_View_DatePickerTest::main');
 }
-
-//require_once "Zend/Registry.php";
-//require_once "Zend/View.php";
-//require_once "Zend/Form.php";
-//require_once "ZendX/JQuery.php";
-//require_once "ZendX/JQuery/Form.php";
-//require_once "Zend/Form/Element.php";
-//require_once "ZendX/JQuery/Form/Element/Spinner.php";
 
 class ZendX_JQuery_JQueryTest extends PHPUnit\Framework\TestCase
 {

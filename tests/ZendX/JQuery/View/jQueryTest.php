@@ -20,7 +20,6 @@
  * @version     $Id$
  */
 
-require_once 'jQueryTestCase.php';
 
 class ZendX_JQuery_View_jQueryTest extends ZendX_JQuery_View_jQueryTestCase
 {

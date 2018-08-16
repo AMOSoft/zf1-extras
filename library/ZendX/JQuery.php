@@ -143,10 +143,6 @@ class ZendX_JQuery
         }
 
         if(!class_exists('Zend_Json')) {
-            /**
-             * @see Zend_Json
-             */
-            require_once "Zend/Json.php";
         }
         return Zend_Json::encode($value, false, array('enableJsonExprFinder' => true));
     }

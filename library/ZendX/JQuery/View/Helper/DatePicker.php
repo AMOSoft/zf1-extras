@@ -21,10 +21,6 @@
  */
 
 
-/**
- * @see ZendX_JQuery_View_Helper_UiWidget
- */
-require_once "ZendX/JQuery/View/Helper/UiWidget.php";
 
 /**
  * jQuery Date Picker View Helper
@@ -85,7 +81,6 @@ class ZendX_JQuery_View_Helper_DatePicker extends ZendX_JQuery_View_Helper_UiWid
         if($format == null) {
             $locale = Zend_Registry::get('Zend_Locale');
             if( !($locale instanceof Zend_Locale) ) {
-                require_once "ZendX/JQuery/Exception.php";
                 throw new ZendX_JQuery_Exception("Cannot resolve Zend Locale format by default, no application wide locale is set.");
             }
             /**

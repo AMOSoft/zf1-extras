@@ -20,9 +20,6 @@
  * @version     $Id$
  */
 
-require_once "jQueryTestCase.php";
-require_once "ZendX/JQuery/View/Helper/Spinner.php";
-
 class ZendX_JQuery_View_SpinnerTest extends ZendX_JQuery_View_jQueryTestCase
 {
     public function testCallingInViewEnablesJQueryHelper()

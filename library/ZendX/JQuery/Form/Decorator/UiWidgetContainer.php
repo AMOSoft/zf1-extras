@@ -20,7 +20,6 @@
  * @version     $Id$
  */
 
-require_once "Zend/Form/Decorator/Abstract.php";
 
 /**
  * Abstract Form Decorator for all jQuery UI Widget Containers
@@ -59,7 +58,6 @@ abstract class ZendX_JQuery_Form_Decorator_UiWidgetContainer extends Zend_Form_D
     public function getHelper()
     {
         if (null === $this->_helper) {
-            require_once 'Zend/Form/Decorator/Exception.php';
             throw new Zend_Form_Decorator_Exception('No view helper specified fo DijitContainer decorator');
         }
         return $this->_helper;

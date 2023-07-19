@@ -1,6 +1,6 @@
 {
     "name": "amosoft/zf1-extras",
-    "description": "Zend Framework 1 Extras upgraded to php 7.2",
+    "description": "Zend Framework 1 Extras upgraded to php 8.2",
     "type": "library",
     "keywords": [
         "framework",
@@ -10,8 +10,8 @@
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=7.0.0",
-        "diablomedia/zendframework1": "4.0.*@dev"
+        "php": ">=8.0.0",
+        "diablomedia/zendframework1": "6.0.*@dev"
     },
     "autoload": {
         "psr-0": {
@@ -28,7 +28,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "2.1.x-dev"
         }
     }
 }

@@ -25,10 +25,5 @@
         "classmap": [
             "vendor/diablomedia/zendframework1-db/tests/"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
     }
 }
